@@ -18,7 +18,7 @@
                             <li> <a routerLink="about">Nosotros</a> </li>
                             <li> <a href="service"> Servicios</a> </li>
                             <li> <a href="screenshot">Galería</a> </li>
-                            <li *ngIf="!userLoginOn"> <a href="login">Acceder</a> </li>
+                            <li *ngIf="!userLoginOn"> <a routerLink="login">Acceder</a> </li>
                             <li *ngIf="userLoginOn"> <a href="#blog">Salir</a> </li>
                             <li class="mean-last"> <a href="#"><img src="buscar.png" alt="#" /></a> </li>
                          </ul>
