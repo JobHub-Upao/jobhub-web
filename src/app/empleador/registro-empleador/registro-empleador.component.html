@@ -1,0 +1,33 @@
+<div class="container-contact100">
+    <div class="wrap-contact100">
+        <form class="contact100-form validate-form" [formGroup]="empleadorForm" (ngSubmit)="registerEmpleador()">
+            <span class="contact100-form-title">
+                Registro de Empresas
+            </span>
+
+            <div class="wrap-input100 validate-input" data-validate="Escriba el nombre de la empresa">
+                <input class="input100" type="text" formControlName="nombreEmp" placeholder="Nombre de la empresa" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Por favor ingrese giro de negocio">
+                <input class="input100" type="text" formControlName="rubro" placeholder="Escriba su giro de negocio" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Ingrese su email: e@a.x">
+                <input class="input100" type="text" formControlName="emailEmp" placeholder="Escriba su email" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <button class="contact100-form-btn" >
+                    Enviar
+                </button>
+            </div>
+        </form>
+
+        <div class="contact100-more">
+            Contáctanos al celular: <span class="contact100-more-highlight">946 042 281</span>
+        </div>
+    </div>
